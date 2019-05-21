@@ -1,0 +1,146 @@
+<!--pages/cinema/cinema.wxml-->
+<view class='topContent'>
+  <navigator url='#'>成都 <icon type='info'size='12'/> </navigator>
+  <input class='input-search' placeholder-style="color:#ccc;text-align:center;" 
+    placeholder="找影院" confirm-type='search' />
+</view>
+<view class='midContent'>
+  <view class='cinema-one' wx:for='{{cinemasList}}' wx:key='{{index}}' data-cinemaId='{{item._id}}' catchtap='gotoCinema'>
+    <view class='left'>
+      <text class='text-h2'>{{item.cinemaName}}店<text class='r-text'>{{item.priceRed}}<text class='small-text'> 元起</text></text> 
+      </text>
+      <text class='text-nomal'>{{item.address}}</text>
+      <text class='border-text'>座</text>
+      <text class='border-text'>杜比全景声厅</text>
+      <text class='border-text'>退</text>
+      <text class='border-text'>改签</text>
+      <text class='border-text-y'>小吃</text>
+      <text class='border-text-y'>折扣卡</text>
+      <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>{{item.text}}  </text>
+    </view>
+    <view class='right'>
+      <text class='text'>1.6{{}}km</text>
+    </view>
+  </view>
+  <view class='cinema-one'>
+    <view class='left'>
+      <text class='text-h2'>UME影城{{}}店<text class='r-text'>{{}}32.5<text class='small-text'> 元起</text></text> 
+      </text>
+      <text class='text-nomal'>金牛区沙湾路2号{{}}</text>
+      <text class='border-text'>座</text>
+      <text class='border-text'>杜比全景声厅</text>
+      <text class='border-text'>退</text>
+      <text class='border-text'>改签</text>
+      <text class='border-text-y'>小吃</text>
+      <text class='border-text-y'>折扣卡</text>
+     
+    </view>
+    <view class='right'>
+      <text class='text'>1.6{{}}km</text>
+    </view>
+  </view>
+  <view class='cinema-one'>
+    <view class='left'>
+      <text class='text-h2'>UME影城{{}}店<text class='r-text'>{{}}32.5<text class='small-text'> 元起</text></text> 
+      </text>
+      <text class='text-nomal'>金牛区沙湾路1号{{}}</text>
+      <text class='border-text'>座</text>
+      <text class='border-text'>杜比全景声厅</text>
+      <text class='border-text'>退</text>
+      <text class='border-text'>改签</text>
+      <text class='border-text-y'>小吃</text>
+      <text class='border-text-y'>折扣卡</text>
+      <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>开卡特惠，首单两张立减10元  </text>
+    </view>
+    <view class='right'>
+      <text class='text'>1.6{{}}km</text>
+    </view>
+  </view>
+  <view class='cinema-one'>
+    <view class='left'>
+      <text class='text-h2'>UME影城{{}}店<text class='r-text'>{{}}32.5<text class='small-text'> 元起</text></text> 
+      </text>
+      <text class='text-nomal'>金牛区沙湾路1号{{}}</text>
+      <text class='border-text'>座</text>
+      <text class='border-text'>杜比全景声厅</text>
+      <text class='border-text'>退</text>
+      <text class='border-text'>改签</text>
+      <text class='border-text-y'>小吃</text>
+      <text class='border-text-y'>折扣卡</text>
+      <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>开卡特惠，首单两张立减10元  </text>
+    </view>
+    <view class='right'>
+      <text class='text'>1.6{{}}km</text>
+    </view>
+  </view>
+  <view class='cinema-one'>
+    <view class='left'>
+      <text class='text-h2'>UME影城{{}}店<text class='r-text'>{{}}32.5<text class='small-text'> 元起</text></text> 
+      </text>
+      <text class='text-nomal'>金牛区沙湾路1号{{}}</text>
+      <text class='border-text'>座</text>
+      <text class='border-text'>杜比全景声厅</text>
+      <text class='border-text'>退</text>
+      <text class='border-text'>改签</text>
+      <text class='border-text-y'>小吃</text>
+      <text class='border-text-y'>折扣卡</text>
+      <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>开卡特惠，首单两张立减10元  </text>
+    </view>
+    <view class='right'>
+      <text class='text'>1.6{{}}km</text>
+    </view>
+  </view>
+  <view class='cinema-one'>
+    <view class='left'>
+      <text class='text-h2'>UME影城{{}}店<text class='r-text'>{{}}32.5<text class='small-text'> 元起</text></text> 
+      </text>
+      <text class='text-nomal'>金牛区沙湾路1号{{}}</text>
+      <text class='border-text'>座</text>
+      <text class='border-text'>杜比全景声厅</text>
+      <text class='border-text'>退</text>
+      <text class='border-text'>改签</text>
+      <text class='border-text-y'>小吃</text>
+      <text class='border-text-y'>折扣卡</text>
+      <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>开卡特惠，首单两张立减10元  </text>
+    </view>
+    <view class='right'>
+      <text class='text'>1.6{{}}km</text>
+    </view>
+  </view>
+  <view class='cinema-one'>
+    <view class='left'>
+      <text class='text-h2'>UME影城{{}}店<text class='r-text'>{{}}32.5<text class='small-text'> 元起</text></text> 
+      </text>
+      <text class='text-nomal'>金牛区沙湾路1号{{}}</text>
+      <text class='border-text'>座</text>
+      <text class='border-text'>杜比全景声厅</text>
+      <text class='border-text'>退</text>
+      <text class='border-text'>改签</text>
+      <text class='border-text-y'>小吃</text>
+      <text class='border-text-y'>折扣卡</text>
+      <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>开卡特惠，首单两张立减10元  </text>
+    </view>
+    <view class='right'>
+      <text class='text'>1.6{{}}km</text>
+    </view>
+  </view>
+  <view class='cinema-one'>
+    <view class='left'>
+      <text class='text-h2'>UME影城{{}}店<text class='r-text'>{{}}32.5<text class='small-text'> 元起</text></text> 
+      </text>
+      <text class='text-nomal'>金牛区沙湾路1号{{}}</text>
+      <text class='border-text'>座</text>
+      <text class='border-text'>杜比全景声厅</text>
+      <text class='border-text'>退</text>
+      <text class='border-text'>改签</text>
+      <text class='border-text-y'>小吃</text>
+      <text class='border-text-y'>折扣卡</text>
+      <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>开卡特惠，首单两张立减10元  </text>
+    </view>
+    <view class='right'>
+      <text class='text'>1.6{{}}km</text>
+    </view>
+  </view>
+  <!-- 复制 -->
+</view>
+

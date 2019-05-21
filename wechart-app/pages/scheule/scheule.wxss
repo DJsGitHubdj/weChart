@@ -1,0 +1,97 @@
+/* pages/scheule/scheule.wxss */
+.top{
+  margin:28rpx 30rpx 20rpx 30rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.text-nomal{
+  padding: 2rpx 0;
+  display: block;
+  /* 超宽隐藏 */
+  width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-ccc-long{
+  font-size: 28rpx;
+  color: #999;
+  display: inline-block;
+  width: 450rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.show-nav{
+  padding: 20rpx;
+  font-size: 26rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-text{
+  display: block;
+  margin-right:40rpx;
+}
+.choose-icon{
+  width: 38rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+.inner{
+    background-color: #f0f0f0;
+    margin-top: 20rpx;
+    padding-bottom: 150rpx;
+    position: relative;
+  
+  }
+  .inner .hall{
+    font-size: 32rpx;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding: 6rpx;
+    background-color: #dcdcdc;
+    
+  }
+  .box{
+    width: 50rpx;
+    height: 50rpx;
+    display: inline-block;
+  }
+
+  /*左边列表  */
+  .background{
+    background-color: #c3c3c3;
+    position: absolute;
+    left: 0;
+    padding: 10rpx 6rpx;
+    border-radius: 10rpx;
+  }
+   .seats{
+   padding-top: 30rpx;
+  } 
+
+  image{
+    margin-right: 10rpx;
+    
+  }
+.margin{
+  padding-left: 60rpx;
+}
+
+/*选坐位出现的几排几座  */
+.position button{
+  float: left;
+  margin-right: 10rpx;
+  font-size: 28rpx;
+}
+.recommend{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+}
+.choose button{
+  float: left;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}

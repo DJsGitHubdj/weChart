@@ -1,0 +1,73 @@
+<!--pages/upCinema/upCinema.wxml-->
+ <scroll-view scroll-x="true" class='topContent'> 
+  <text class='text-for' wx:for='{{dataBar}}'
+  data-idx="{{index}}"
+  class="text-item {{currentTab==index ? 'active' : ''}}"
+  wx:key="unique" bindtap='navbarTap'>{{item}}{{}}
+  </text>
+</scroll-view> 
+<view class='midContent'>
+  <!-- 当天的影院排版 -->
+  <view hidden="{{currentTab!==0}}">
+    <view class='cinema-one' wx:for='{{cinemasList}}' wx:key='{{index}}' data-cinemaId='{{item._id}}' bindtap='goInnerCimema' 
+    data-movieId='{{movieId}}' data-type='{{movieType}}' data-movieName='{{movieName}}'>
+      <view class='left'>
+        <text class='text-h2'>{{item.cinemaName}}店<text class='r-text'>{{item.priceRed}}<text class='small-text'> 元起</text></text> 
+        </text>
+        <text class='text-nomal'>{{item.address}}</text>
+        <text class='border-text'>座</text>
+        <text class='border-text'>杜比全景声厅</text>
+        <text class='border-text'>退</text>
+        <text class='border-text'>改签</text>
+        <text class='border-text-y'>小吃</text>
+        <text class='border-text-y'>折扣卡</text>
+        <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>{{item.text}}</text>
+      </view>
+      <view class='right'>
+        <text class='text'>1.6{{}}km</text>
+      </view>
+    </view>
+  </view> 
+  <!-- 明天的影院排版  -->
+  <view hidden="{{currentTab!==1}}">
+    <view class='cinema-one'wx:for='{{cinemasList}}' wx:key='{{index}}' data-cinemaId='{{item._id}}'
+    data-movieId='{{movieId}}' data-type='{{movieType}}' data-movieName='{{movieName}}' bindtap='goInnerCimema'>
+      <view class='left'>
+        <text class='text-h2'>{{item.cinemaName}}店<text class='r-text'>{{item.priceRed}}<text class='small-text'> 元起</text></text> 
+        </text>
+        <text class='text-nomal'>{{item.address}}</text>
+        <text class='border-text'>座</text>
+        <text class='border-text'>杜比全景声厅</text>
+        <text class='border-text'>退</text>
+        <text class='border-text'>改签</text>
+        <text class='border-text-y'>小吃</text>
+        <text class='border-text-y'>折扣卡</text>
+        <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>{{item.text}} </text>
+      </view>
+      <view class='right'>
+        <text class='text'>1.6{{}}km</text> 
+      </view>
+    </view>
+  </view>
+  <!-- 后天 -->
+  <view hidden="{{currentTab!==2}}">
+    <view class='cinema-one'wx:for='{{cinemasList}}' wx:key='{{index}}' data-cinemaId='{{item._id}}' 
+    data-movieId="{{movieId}}" data-type="{{movieType}}"  bindtap='goInnerCimema' data-movieName='{{movieName}}'>
+      <view class='left'>
+        <text class='text-h2'>UME影城{{}}店<text class='r-text'>{{item.priceRed}}<text class='small-text'> 元起</text></text> 
+        </text>
+        <text class='text-nomal'>金牛区沙湾路1号{{}}</text>
+        <text class='border-text'>座</text>
+        <text class='border-text'>杜比全景声厅</text>
+        <text class='border-text'>退</text>
+        <text class='border-text'>改签</text>
+        <text class='border-text-y'>小吃</text>
+        <text class='border-text-y'>折扣卡</text>
+        <text class='text-nomal'>{{}}<text class='border-text-blue'>卡</text>开卡特惠，首单两张立减10元  </text>
+      </view>
+      <view class='right'>
+        <text class='text'>1.6{{}}km</text> 
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,91 @@
+/* pages/search/search.wxss */
+.body{
+  font-size: 27rpx;
+  background-color: #f5f5f5;
+  padding: 0 26rpx;
+}
+.top{
+  padding: 10rpx 0;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBar{
+  width: 90%;
+  border: 1rpx solid #ccc;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8rpx;
+}
+.search{
+  padding: 10rpx;
+}
+.goback{
+  color: #dd403b;
+}
+.movie-one{
+  display: flex;
+  height: 228rpx;
+  border-bottom: 1rpx solid #ccc;
+  justify-content: space-between;
+  align-items:center;
+}
+.hot-movie{
+  width: 130rpx;
+  height: 180rpx;
+}
+.h3{
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+}
+text{
+  display: block;
+}
+.text-nomal{
+  display: block;
+  padding: 5rpx 0;
+  color: #999;
+  /* 设置文本超出部分为省略号 */
+  width: 420rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* .small-text{
+  display: block; 
+  font-size: 18rpx;
+  padding: 0;
+} */
+.y-color{
+  color: #ffb400;
+  width: 100rpx;
+  margin: 40rpx 20rpx;  
+}
+.y-color-com{
+  display: block;
+  color: #ffb400;
+  width: 100rpx;
+  margin: 40rpx 0;  
+}
+.btn{
+  height: 56rpx;
+  color:aliceblue;
+  background-color:#ef4238;
+}
+.search-list{
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.movie-name{
+  display: block;
+  margin-right:20rpx;
+  margin-bottom: 20rpx;
+  padding: 6rpx 10rpx; 
+  border-radius: 8rpx;
+  background-color: #ccc;
+}

@@ -1,0 +1,85 @@
+<!--pages/weChart/wechart.wxml-->
+<view class="container">
+  <view class='topContainer'>
+      <a class='a'>成都</a>
+      <!-- 导航条 -->
+      <view class='navbar'>
+        <text wx:for='{{navbar}}' data-idx="{{index}}"
+         class="item {{currentTab==index ? 'active' : ''}}"
+         wx:key="unique" bindtap='navbarTap'>{{item}}
+        </text>
+        <image class='nav-img' bindtap='gotoSearch' src='../img/search.png'></image>
+      </view>
+      
+  </view>
+  <view class='divLine'></view>
+  <!-- 热映页面 -->
+  <view hidden="{{currentTab!==0}}" class='hot-movies'>
+    <view class='movie-one' wx:for="{{moviesList}}" wx:key="{{index}}" data-movieId='{{item._id}}' data-type="mov" catchtap='gotoDetails' >
+      <image class='hot-movie' src='http://127.0.0.1:3000/{{item.bigImg[0]}}'></image>
+      <view class='mid'>
+        <text class='h3'>{{item.CName}}</text>
+        <text class='text-nomal'>类型：{{item.type}}</text>
+        <text class='text-nomal'>主演：{{item.actors}}</text>
+        <text class='text-nomal'>今天{{}}0家影院放映{{}}0场</text>
+      </view>
+      <view class='right'>
+        <text class='y-color'>{{item.score}}分</text>
+        <button class='btn' size='mini'>购票</button>
+      </view>
+    </view>
+    
+  </view>
+  <!-- 待映 -->
+  <view hidden="{{currentTab!==1}}" class="coming-movies">
+    <text class='coming-text'>近期最受欢迎</text>
+      <scroll-view  scroll-x="true"  class='movie-list' >
+        <view class='list-one' wx:for="{{comingList}}" wx:key='{{index}}'  data-movieId='{{item._id}}'  data-type="upcom" catchtap='gotoDetails'>
+          <image class='coming-movie' src='http://127.0.0.1:3000/{{item.bigImg[0]}}'></image>
+          <text class="text-coming-wid">{{item.CName}}</text>
+          <text class='text-nomal'>{{item.favor}}人想看</text>
+          <text class='text-nomal'>{{item.releaseDate}}</text>
+        </view>
+     </scroll-view> 
+    <view class='divLine-wid'></view>
+    <view class='coming-bottom'>
+      <text>11月3日{{}}周五{{}}</text>
+      <view class='com-list'>
+        <view class='movie-one' wx:for="{{comingList}}" wx:key='{{index}}' data-movieId='{{item._id}}'data-type="upcom" catchtap='gotoDetails'>
+          <image class='hot-movie' src='http://127.0.0.1:3000/{{item.bigImg[0]}}'></image>
+          <view class='mid'>
+            <text class='h3'>{{item.CName}}</text>
+            <text class='text-nomal'>类型：{{item.type}}</text>
+            <text class='text-nomal'>主演：{{item.actors}}</text>
+            <text class='text-nomal'>{{item.releaseDate}}{{item.area}}上映</text>
+          </view>
+          <view class='right'>
+            <text class='y-color-com'>{{item.favor}}人想看</text>
+            <button class='btn-com' size='mini'>预售</button>
+          </view>
+        </view>
+        <view class='movie-one'>
+          <navigator url="/page/details/details?title=details" 
+          hover-class="navigator-hover">
+          <image class='hot-movie' src='../img/movie_01.png'></image>
+          </navigator>
+          <view class='mid'>
+            <text class='h3'>全球风暴{{}}</text>
+            <text class='text-nomal'>动作,惊悚,灾难{{}}</text>
+            <text class='text-nomal'>主演：杰拉德.巴特勒,杰拉德.巴特勒,...{{}}</text>
+            <text class='text-nomal'>今天{{}}家影院放映{{}}场</text>
+          </view>
+          <view class='right'>
+            <text class='y-color'>{{}}8.0分</text>
+            <button class='btn-com' size='mini'>预售</button>
+          </view>
+        </view>
+      </view>
+      
+  </view>
+  </view>
+</view>
+<view>
+<text class='text-h5'>&copy metuan.com 京ICP证070791号&nbsp京公网安备11010502025545号</text>
+     <text class='text-h5'>北京猫眼文化传媒有限公司</text>
+</view>

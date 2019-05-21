@@ -1,0 +1,67 @@
+<!--pages/InnerCimema/InnerCimema.wxml-->
+<view class='topContent'>
+  <view class='left'>
+    <text class='text-nomal'>{{cimemaMsg.cinemaName}}店</text>
+    <text class='text-ccc-long'>{{cimemaMsg.address}}</text>
+  </view>
+  <view class='right'>
+    <image class='nav-img' src='../img/location.png'/>
+    <text class='text-small'>{{}}地图</text>
+  </view>
+</view>
+<scroll-view  scroll-x="true"  class='movie-list' >
+   <view class='movie-one' catchtap='gotoSlect'>  
+    <image class='pic' src='http://127.0.0.1:3000/{{movieMsg.bigImg[0]}}'/>
+  </view>
+  <image class='icon' src='../img/icon-01.png'/>
+</scroll-view>
+<view class='msg'>
+   <text class='text'>{{movieMsg.CName}}</text> <text class='text-yel'>{{movieMsg.score}}分</text>
+   <view class='bottom-msg'>
+     <text class='text-ccc'>{{movieMsg.duration}}分钟</text>丨
+     <text class='text-ccc'>{{movieMsg.type}} </text>丨
+     <text class='text-ccc'>{{movieMsg.actors}} </text>
+   </view>
+</view>
+<view class='cinema-date'>
+  <text class='text-red'>今天11月x日</text>
+</view>
+<view class='cinema-card'>
+  <view>
+  <text class='text-yellow-border'>折扣卡 </text> <text class='text-yellow'>{{cimemaMsg.text}}</text>
+  </view>
+  <text class='text-ccc'>{{}}30元开卡></text>
+</view>
+<view class='msg-list' wx:for="{{scheuleList}}" wx:key="{{index}}" data-scheuleId='{{item._id}}' data-name='{{movieName}}'
+ data-cimemaName='{{cimemaMsg.cinemaName}}' data-time='{{item.time}}' bindtap='gotoChoose' >
+  <view class='list-left'>
+    <text class='text'>{{item.time}}</text>
+    <text class='text-cc'>{{item.endtime}}散场</text>
+  </view>
+  <view class='list-middle'>
+    <text class='text'>原版3D</text>
+    <text class='text-cc'>{{item.projName}}</text>
+  </view>
+  <text class='text-price'>{{item
+  .price}}元</text>
+  <view class='list-right'>
+    <button class='gotoChoose' size='mini' data-scheuleId='{{item._id}}' data-name='{{movieName}}'
+     data-cimemaName='{{cimemaMsg.cinemaName}}' data-time='{{item.time}}' bindtap='gotoChoose'>购票</button>
+  </view> 
+ 
+</view>
+<view class='msg-list'>
+  <view class='list-left'>
+    <text class='text'>10:10</text>
+    <text class='text-cc'>11:59散场</text>
+  </view>
+  <view class='list-middle'>
+    <text class='text'>原版3D</text>
+    <text class='text-cc'>9号厅</text>
+  </view>
+  <text class='text-price'>{{cimemaMsg.priceRed}}元</text>
+  <view class='list-right'>
+    <button class='gotoChoose' size='mini' bindtap='gotoChoose'>购票</button>
+  </view> 
+ 
+</view>

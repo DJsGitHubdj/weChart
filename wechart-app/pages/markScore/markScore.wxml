@@ -1,0 +1,17 @@
+<!--pages/markScore/markScore.wxml-->
+<view class='content'>
+<text class='top2'>{{movieName}}</text>
+<text class='top2'>{{score}}</text>
+<text class='top'>{{text}}</text>
+<scroll-view class='starts' scroll-x='true' bindScroll='gotoMark'>
+  <image class="start" src='{{start}}'/>
+  <image class="start" src='{{start}}'/>
+  <image class="start" src='{{start}}'/>
+  <image class="start" src='{{start}}'/>
+  <image class="start" src='{{start}}'/>
+</scroll-view>
+<view class='textareaBar'>
+  <textarea class='textarea' bindblur="bindTextAreaBlur" placeholder="快来说说你的看法吧（6-300字）" />
+</view>
+<button class='btn' bindtap='upLoad'>提交</button>
+</view>

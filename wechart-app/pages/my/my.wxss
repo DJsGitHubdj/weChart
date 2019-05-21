@@ -1,0 +1,21 @@
+/* pages/my/my.wxss */
+
+.content{
+  padding:0 24rpx ;
+  font-size: 26rpx;
+  border-bottom: 1rpx solid #b0b0b0;
+  border-top: 1rpx solid #b0b0b0;
+}
+.my-one{
+  height: 90rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #b0b0b0;
+}
+.navg{
+  width: 680rpx;
+  display: block;
+}
+

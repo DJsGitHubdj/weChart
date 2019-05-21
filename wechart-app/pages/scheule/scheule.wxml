@@ -1,0 +1,47 @@
+<!--pages/scheule/scheule.wxml-->
+<view class='top'>
+    <text class='text-nomal'>{{cimemaName}}店</text>
+    <text class='text-ccc-long'>今天11月{{scheuleTime}} 原版3D</text>
+</view>
+<view class='show-nav'>
+<!-- text作为父元素时不能包含图片 -->
+  <view class='nav-text'>
+    <image class='choose-icon' src='../img/choose_01.png'/>
+    <text>可选</text>
+  </view>
+  <view class='nav-text'>
+    <image class='choose-icon' src='../img/choose_02.png'/>
+    <text>不可选</text>
+  </view>
+  <view class='nav-text'>
+    <image class='choose-icon' src='../img/choose_03.png'/>
+    <text>已选</text>
+  </view>
+</view>
+<view class='inner'>
+  <view class='hall'>{{hall}}</view>
+  <!--坐位  -->
+  <view class='seats'>
+   
+    <view class='right' wx:for="{{seat}}" wx:key="seat{{index}}" wx:for-index="x">
+    <view class='background'>
+      <view class='left'>{{x+1}}</view>
+    </view>
+    <view class='margin'>
+       <image class='box' src="{{selected[aa]}}" wx:for="{{item}}" wx:for-item="aa" bindtap="change" wx:key="aa{{y}}" data-x="{{x}}" wx:for-index="y" data-y="{{y}}" data-name="{{aa}}"></image>
+    </view>
+    </view>
+  </view>
+</view>
+<!--自己点击内容选座  -->
+<text class='recommend'>推荐坐位</text>
+<view class='choose'>
+    <button plain>1人</button>
+    <button plain>2人</button>
+    <button plain>3人</button>
+    <button plain>4人</button>
+</view>
+<view class='position'>
+  <button  wx:for="{{array}}" wx:key='{{index}}'>{{item.x+1}}排{{item.y+1}}座</button>
+</view>
+

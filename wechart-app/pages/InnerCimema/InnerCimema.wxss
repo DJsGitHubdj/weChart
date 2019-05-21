@@ -1,0 +1,148 @@
+/* pages/InnerCimema/InnerCimema.wxss */
+.topContent{
+  padding: 32rpx 28rpx;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.msg{
+  padding: 32rpx 28rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+.text-yel{
+  padding: 2rpx 8rpx;
+  color: #ffb400;
+
+}
+.text-nomal{
+  padding: 2rpx 0;
+  display: block;
+  /* 超宽隐藏 */
+  width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-ccc-long{
+  font-size: 28rpx;
+  color: #999;
+  display: inline-block;
+  width: 450rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-ccc{
+  font-size: 28rpx;
+  color: #999;
+  display: inline-block;
+  width: 150rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-small{
+  padding: 2rpx 0;
+  color: #999;
+  font-size: 24rpx;
+  display: block;
+}
+.nav-img{
+  margin-left: 14rpx;
+  display: block;
+  width: 38rpx;
+  height: 38rpx;
+}
+.right{
+  padding: 0 20rpx;
+  border-left: 1rpx solid #ccc;
+}
+.movie-list{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+  height: 294rpx;
+  white-space:nowrap;
+   background-color: #2d3137;  
+  /* z-index: -999; */
+  border: 1rpx solid #999;
+  position: relative;
+}
+.pic{
+  width: 166rpx;
+  height: 230rpx;
+}
+.icon{
+  width:80rpx;
+  height:70rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 30%;
+}
+.cinema-date{
+  height: 86rpx;
+  border-top:1rpx solid #ccc; 
+  border-bottom:1rpx solid #ccc; 
+  display: flex;
+  align-items: center;
+}
+.text-red{
+  color:#ef4238;
+  font-size: 28rpx;
+  width:170rpx;
+  display: block;
+  padding: 24rpx 24rpx;
+  border-bottom: 4rpx solid #ef4238;
+}
+.cinema-card{
+  height: 86rpx;
+  padding: 0 24rpx;
+  background-color: #fff8ee; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-yellow-border{
+  color: white;
+  margin-right: 20rpx;
+  background-color:#ffb400; 
+  font-size: 20rpx;
+  border: 1rpx solid #ffb400;
+  border-radius: 6rpx;
+}
+.text-yellow{
+  color: #ffb400;
+  font-size: 28rpx;
+}
+.msg-list{
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+
+
+}
+.text-cc{
+  font-size: 28rpx;
+  color: #999;
+  display: block;
+  width: 150rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-price{
+  color: #ef4238;
+}
+.gotoChoose{
+  /* width: 100rpx;
+  height: 50rpx; */
+  color: white;
+  background-color: #ef4238;
+}

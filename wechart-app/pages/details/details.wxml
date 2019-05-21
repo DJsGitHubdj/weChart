@@ -1,0 +1,69 @@
+<!--pages/details/details.wxml-->
+<view class='topContent'>
+  <view class='pic-news'>
+    <image class='details-movie'  catchtap='gotoPlay' src='http://127.0.0.1:3000/{{detailsMsg.bigImg[0]}}'></image>
+    <view class='right'>
+      <text class='text-h3'>{{detailsMsg.CName}}</text>
+      <text class='text-h6'>{{detailsMsg.EName}}</text>
+      <text class='text-score'><icon type='info'size='12'/>{{detailsMsg.score}}分</text>
+      <text class='text-h6'>({{detailsMsg.favor/10000}}万人评论)</text>
+      <text class='text-h5'>{{detailsMsg.type}}</text>
+      <text class='text-h5'>{{detailsMsg.area}}/{{detailsMsg.duration}}分钟</text>
+      <text class='text-h5'>{{detailsMsg.releaseDate}}{{detailsMsg.releaseArea}}上映</text>
+    </view>
+  </view>
+  <view class='details-btn'>
+    <button class='btn' bindtap='wantSee'><image class='img-btn' src='{{topImg[0]}}'></image>{{details[0]}}</button>
+    <button class='btn' data-name='{{detailsMsg.CName}}' bindtap='markScore'><image class='img-btn' src='{{topImg[1]}}'></image>{{details[1]}}</button>
+  </view>
+</view>
+<view class='movie-details-text'>
+   <text>{{detailsMsg.synopsis}}
+   </text>
+</view>
+<!-- 分隔栏 -->
+<view class='divLine-wid'></view>
+<!-- 分隔栏 -->
+<text style='font-size:32rpx;margin:30rpx;'>演职人员</text>
+<scroll-view scroll-x="true" class='actor-list'>
+  <view class='check'>
+    <view class='actor-msg' wx:for="{{actorImgList}}" wx:for-item='img'  wx:key='{{index}}'>
+      <image class='actor-img' src='http://127.0.0.1:3000/{{img}}'></image>
+    </view>
+    <view class='name'>
+      <view class='actor-text-list' wx:for='{{actorList}}' wx:key='{{index}}'>
+        <text class='text-diretor'>{{item}}</text>
+      </view>
+    </view>
+  </view> 
+  
+</scroll-view>
+<!-- 分隔栏 -->
+<view class='divLine-wid'></view>
+<!-- 分隔栏 -->
+<view class='movie-money'>
+  <text style='font-size:32rpx;'>票房</text>
+  <view class='moneny-bottom'>
+    <view class='money-msg'>
+      <text class='money-rank'>1{{}}</text>
+      <text class='rank-text'>昨日票房排行</text>
+    </view>
+    <view class='money-msg'>
+      <text class='money-rank'>{{detailsMsg.favor}}</text>
+      <text class='rank-text'>首周票房（万）</text>
+    </view>
+    <view class='money-msg'>
+      <text class='money-rank'>{{detailsMsg.totalMoney}}</text>
+      <text class='rank-text'>累计票房（万）</text>
+    </view>
+  </view>  
+</view>
+<view style='height:220rpx;text-align:center;'>
+<!-- 分隔栏 -->
+<view class='divLine-wid'></view>
+<!-- 分隔栏 -->
+<text class='text-h5'>&copy metuan.com 京ICP证070791号&nbsp京公网安备11010502025545号</text>
+     <text class='text-h5'>北京猫眼文化传媒有限公司</text>
+</view>
+ <button class='buy-ticket' bindtap='gotoCinema' data-movieId='{{movieId}}' data-type='{{movieType}}' data-name='{{detailsMsg.CName}}'>优惠购票</button> 
+

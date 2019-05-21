@@ -1,0 +1,125 @@
+/* pages/weChart/wechart.wxss */
+
+.navbar{
+ width: 500rpx;
+ height: 90rpx;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-size: 30rpx;
+ font-weight: bold;
+}
+.item{
+   padding: 20rpx 0; 
+}
+.item:hover{
+  color:#ef4238;
+  border-bottom: 5rpx solid #ef4238;
+}
+.nav-img{
+  width: 46rpx;
+  height: 40rpx;
+  padding: 22rpx;
+  padding-right: 0;
+  border-left: 1rpx solid #ccc;
+}
+.hot-movies{
+  padding: 0 24rpx;
+}
+.hot-movie{
+  width: 130rpx;
+  height: 180rpx;
+}
+.movie-one{
+  display: flex;
+  height: 228rpx;
+  border-bottom: 1rpx solid #ccc;
+  justify-content: space-between;
+  align-items:center;
+}
+.h3{
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+}
+text{
+  display: block;
+}
+.text-nomal{
+  display: block;
+  padding: 5rpx 0;
+  color: #999;
+  /* 设置文本超出部分为省略号 */
+  width: 420rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* .small-text{
+  display: block; 
+  font-size: 18rpx;
+  padding: 0;
+} */
+.y-color{
+  color: #ffb400;
+  width: 100rpx;
+  margin: 40rpx 20rpx;  
+}
+.y-color-com{
+  display: block;
+  color: #ffb400;
+  width: 100rpx;
+  margin: 40rpx 0;  
+}
+.btn{
+  height: 56rpx;
+  color:aliceblue;
+  background-color:#ef4238;
+}
+.coming-movies{
+  padding: 0 24rpx;
+}
+.coming-movie{
+  width: 170rpx;
+  height: 230rpx;
+}
+.list-one{
+  width: 170rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+}
+.movie-list{
+  width: 100%;
+  display: flex;
+  height: 380rpx;
+  padding: 10rpx 0;
+  white-space:nowrap;
+}
+.coming-text{
+  padding: 20rpx 0;
+}
+.list{
+  flex:auto;
+}
+.btn-com{
+  height: 56rpx;
+  color:aliceblue;
+  background-color:#52b0eb;
+}
+.mid{
+  width: 420rpx;
+  height: 176rpx;
+  overflow: hidden;
+}
+.text-coming-wid{
+  width: 168rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-h5{
+  display: block;
+  text-align: center;
+  font-size: 26rpx;
+  color: #766163;
+}

@@ -1,0 +1,83 @@
+/* pages/upCinema/upCinema.wxss */
+.topContent{
+  display: flex;
+  justify-content: space-between;
+  padding:0 36rpx;
+  white-space:nowrap;
+  border-bottom: 1rpx solid #b0b0b0;
+}
+.text-for{
+  display: inline-block;
+  
+}
+.text-item{
+  padding: 28rpx 0 ;
+  margin-right:40rpx;
+  color: #999;
+  font-size: 26rpx;
+  display: inline-block;
+}
+.text-item:hover{
+  border-bottom: 4rpx solid #ef4238;
+}
+.midContent{
+  padding: 0 24rpx;
+}
+.text-h2{
+  font-size: 32rpx;
+  padding: 5rpx 0;
+}
+.cinema-one{
+  height: 254rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #b0b0b0;
+}
+.r-text{
+  color:#ef4238;
+  margin-left: 24rpx;
+}
+.small-text{
+  font-size: 18rpx;
+}
+.text{
+  color: #999;
+  font-size: 26rpx;
+}
+.text-nomal{
+  display: block;
+  padding: 5rpx 0;
+  color: #999;
+  font-size: 26rpx;
+  /* 文本超出隐藏 */
+  width: 460rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.border-text{
+  font-size: 22rpx;
+  color: #589daf;
+  padding: 2rpx 6rpx;
+  border: 1rpx solid #589daf;
+  border-radius: 6rpx;
+  margin-right: 8rpx;
+}
+.border-text-y{
+  font-size: 22rpx;
+  color: #f8a935;
+  padding: 2rpx 6rpx;
+  border: 1rpx solid #f8a935;
+  border-radius: 6rpx;
+  margin-right: 8rpx;
+}
+.border-text-blue{
+  font-size: 22rpx;
+  color: white;
+  background-color: #a97be0;
+  padding: 2rpx 6rpx;
+  /* border: 1rpx solid  #a97be0; */
+  border-radius: 6rpx;
+  margin-right: 20rpx;
+}

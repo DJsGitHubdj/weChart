@@ -1,0 +1,144 @@
+/* pages/details/details.wxss */
+.topContent{
+    width: 100%;
+    height: 440rpx;
+    padding:24rpx 28rpx;
+    background-color: #3e3033;
+}
+.details-movie{
+  width: 226rpx;
+  height: 300rpx;
+}
+.text-h3{
+  display: block;
+  font-size: 34rpx;
+  color: whitesmoke;
+}
+.text-h5{
+  display: block;
+  font-size: 26rpx;
+  color: #766163;
+}
+.text-h6{
+  display: block;
+  font-size: 20rpx;
+  color: whitesmoke;
+}
+.text-score{
+  display: block;
+  font-size: 30rpx;
+  color:#ffc600;
+}
+.pic-news{
+  display: flex;
+  align-items: center;
+}
+.right{
+  margin-left: 30rpx;
+}
+.img-btn{
+  width: 32rpx;
+  height: 32rpx;
+
+  margin-left: 30rpx;
+}
+.img-btn{
+  width: 32rpx;
+  height: 32rpx;
+}
+.btn{
+  width: 336rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+  color:whitesmoke;
+  background-color: #5b5c5f;
+}
+.details-btn{
+  margin-right: 50rpx;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.movie-details-text{
+  font-size: 30rpx;
+  height: 130rpx;
+  padding:24rpx 28rpx;
+  overflow: hidden; 
+}
+.movie-details-text:hover{
+  height: 320rpx;
+}
+.movie-details-text::after{
+  content: "...";
+  display: inline-block;
+}
+.actor-img{
+  width: 130rpx;
+  height: 180rpx;
+}
+.actor-list{
+  padding: 24rpx 28rpx;
+  /* display: flex; */
+  width: 100%;
+  height: 300rpx;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.text-actor{
+  font-size: 24rpx;
+  display:block;
+  width: 130rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.actor-msg{
+  margin-right: 20rpx;
+  display: inline-block;
+  white-space: nowrap;
+}
+.actor-text-list{
+  margin-right: 20rpx;
+  display: inline-block;
+  
+}
+.text-diretor{
+  font-size: 24rpx;
+  display:block;
+  width: 134rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center; 
+}
+.movie-money{
+  padding: 24rpx 28rpx;
+}
+.moneny-bottom{
+  display: flex;
+  justify-content: space-around;
+}
+.money-rank{
+  margin: 8rpx 0;
+  text-align: center;
+  display: block;
+  font-size: 30rpx;
+  color: #ef4238;
+}
+.rank-text{
+  display: block;
+  font-size: 20rpx;
+  color:#766163;
+}
+.buy-ticket{
+  width: 100%;
+  color: whitesmoke;
+  background-color: #ef4238;
+  position: fixed;
+  bottom:0;
+  left:0;
+  z-index: 999;
+}
+.check{
+  display: block;
+}

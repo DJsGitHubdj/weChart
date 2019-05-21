@@ -1,0 +1,31 @@
+<!--pages/my/my.wxml-->
+<view class='body'>
+  <view class='content'>
+    <view class='my-one'>
+      <navigator class='navg' url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">我的订单</navigator>
+      <icon type='success'/>
+    </view>
+    <view class='my-one'>
+      <navigator class='navg' url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">优惠券</navigator>
+      <icon type='success'/>
+    </view>
+    <view class='my-one'>
+      <navigator class='navg' url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">影院会员卡</navigator>
+      <icon type='success'/>
+    </view>
+  </view>
+  <!-- 分隔符 -->
+  <view class='divLine-wid'></view>
+  <!-- 下面的栏目 -->
+  <view class='content'>
+    <view class='my-one'>
+      <navigator class='navg' url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">想看的电影</navigator>
+      <icon type='success'/>
+    </view>
+    <view class='my-one'>
+      <navigator class='navg' url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">看过的电影</navigator>
+      <icon type='success'/>
+    </view>
+    
+  </view>
+</view>
